@@ -1,0 +1,21 @@
+{
+  "name": "location-reviews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "publish": "npx -p @apollo/rover rover subgraph publish AppSuperGraph@current --name users --schema ./users.graphql --routing-url http://localhost:4003",
+    "start": "nodemon . -e js,graphql"
+  },
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=14.0.0 <=18"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.0.0",
+    "@apollo/subgraph": "^2.4.5",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "nodemon": "^2.0.13"
+  }
+}
